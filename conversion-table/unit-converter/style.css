@@ -1,0 +1,23 @@
+.converter-box{
+    padding: 2em;
+}
+
+.main-container{
+    background-color: rgb(152, 193, 207);
+    margin: 3em 8em; 
+}
+
+.converter-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2em;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.convert-button{
+    margin-bottom: 2em;
+}
