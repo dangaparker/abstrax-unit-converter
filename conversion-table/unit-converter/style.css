@@ -33,7 +33,7 @@
 
 button{
     border:2px solid rgba(255,255,255,.5);
-	font-size:1.75em;
+	font-size:1.3em;
 	padding:.25em .5em .3125em;
 	color:rgba(117, 117, 117);
 	border-radius:.25em;
@@ -48,7 +48,7 @@ button:hover{
 
 input{
     border:2px solid rgba(255,255,255,.5);
-	font-size:1.75em;
+	font-size:1.3em;
 	padding:.25em .5em .3125em;
 	color:rgba(117, 117, 117);
 	border-radius:.25em;
@@ -75,13 +75,14 @@ input:keyup {
     overflow: hidden;
     background-color: transparent;
     color:rgba(117, 117, 117);
-    font-size:1.75em;
+    font-size:1.3em;
     cursor: pointer;
 }
 .unit-drop-down:focus{
     outline:none;
     color:rgba(117, 117, 117);
     cursor: pointer;
+    font-size: 1.3em;
 }
 
 .to-unit-drop-down:focus{
@@ -107,4 +108,18 @@ input:keyup {
     font-family: Arial, Helvetica, sans-serif
 }
 
+@media only screen and (max-width: 800px){
+    .converter-box{
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0 0 0;
+        margin: 0 1em 0 1em;
+    }
+    .converter-box > * {
+        margin: .2em 0;
+    }
+}
 
+.error{
+    border:2px solid red
+}
