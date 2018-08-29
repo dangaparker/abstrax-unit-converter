@@ -5,6 +5,9 @@
 .main-container{
     background-color: rgb(152, 193, 207);
     margin: 3em 8em; 
+    border: solid black 1px;
+    border-radius: 6px;
+    box-shadow: 2px 3px 2px black;
 }
 
 .converter-box{
