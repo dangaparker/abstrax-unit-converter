@@ -10,16 +10,16 @@
     <title>Abstrax Converter</title>
 </head>
 <body>
-    
+    <div class='parent'>
     <div class="main-container">
         <div class="converter-box">
             <input class="input-number"type="number" min="0" placeholder="enter weight">
-            <select class="unit-drop-down" name="" id="">
+            <select class="unit-drop-down" onchange='removeDuplicate()'>
                 <option value="grams">grams</option>
                 <option value="kg">kg</option>
             </select>
             <div>to</div>
-            <select class="to-unit-drop-down" name="" id="">
+            <select class="to-unit-drop-down">
                 <option value="mL">mL</option>
                 <option value="L">L</option>
                 <option class = 'grams' value="grams">grams</option>
@@ -36,6 +36,7 @@
         <div class="button-container">
             <button class="convert-button">Convert</button>
         </div>
+    </div>
     </div>
 </body>
 </html>
