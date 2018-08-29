@@ -14,24 +14,27 @@
     <div class="main-container">
         <div class="converter-box">
             <input class="input-number"type="number" min="0" placeholder="enter weight">
-            <select class="unit-drop-down" onchange='removeDuplicate()'>
-                <option value="grams">grams</option>
-                <option value="kg">kg</option>
-            </select>
-            <div>to</div>
+            
+                <select class="unit-drop-down" onchange='removeDuplicate()'>
+                    <option value="grams">grams</option>
+                    <option value="kg">kg</option>
+                </select>
+           
+            <div class='to'>to</div>
+           
             <select class="to-unit-drop-down">
-                <option value="mL">mL</option>
+                <option class='option1' id="option1" value="mL">mL</option>
                 <option value="L">L</option>
                 <option class = 'grams' value="grams">grams</option>
                 <option value="oz">oz</option>
                 <option class = 'kilograms' value="kg">kg</option>
-                <option value="pint">pint</option>
-                
-               
+                <option value="pint">pint</option> 
             </select>
+           <div class='answerAndUnits'>
             <div>=</div>
             <div class="answer-number">0</div>
             <div class="answer-units">mL</div>
+           </div>
         </div>
         <div class="button-container">
             <button class="convert-button">Convert</button>
