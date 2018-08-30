@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,42 @@
     <script src="main.js"></script>
     <title>Abstrax Converter</title>
 </head>
+
 <body>
     <div class='parent'>
-    <div class="main-container">
-        <div class="converter-box">
-            <input class="input-number"type="number" min="0" placeholder="enter weight" id="input-number">
-            
+        <div class="main-container">
+            <div class="converter-box">
+                <input class="input-number" type="number" min="0" placeholder="enter weight" id="input-number">
+
                 <select class="unit-drop-down" onchange='removeDuplicate()'>
                     <option value="grams">grams</option>
                     <option value="kg">kg</option>
                 </select>
-           
-            <div class='to'>to</div>
-           
-            <select class="to-unit-drop-down">
-                <option class='option1' id="option1" value="mL">mL</option>
-                <option value="L">L</option>
-                <option class = 'grams' value="grams">grams</option>
-                <option value="oz">oz</option>
-                <option class = 'kilograms' value="kg">kg</option>
-                <option value="pint">pints</option> 
-                <option value="gal">gal</option>
-            </select>
-           <div class='answerAndUnits'>
-            <div>=</div>
-            <div class="answer-number">0</div>
-            <div class="answer-units"></div>
-           </div>
+
+                <div class='to'>to</div>
+
+                <select class="to-unit-drop-down">
+                    <option class='option1' id="option1" value="mL">mL</option>
+                    <option value="L">L</option>
+                    <option class='grams' value="grams">grams</option>
+                    <option value="oz">oz</option>
+                    <option class='kilograms' value="kg">kg</option>
+                    <option value="pint">pints</option>
+                    <option value="gal">gal</option>
+                </select>
+                
+            </div>
+            <div class='answerAndUnits'>
+                <div>=</div>
+                <div class="answer-number">0</div>
+                <div class="answer-units"></div>
+            </div>
+            <div class="button-container">
+                <button class="convert-button">convert</button>
+                <button class="reset-button">reset</button>
+            </div>
         </div>
-        <div class="button-container">
-            <button class="convert-button">convert</button>
-        </div>
-    </div>
     </div>
 </body>
+
 </html>
