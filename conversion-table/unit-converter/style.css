@@ -4,11 +4,15 @@
 }
 
 .main-container{
-    background-color: rgba(179, 211, 241, 0.801);
+    background-image: url("./assets/ABSTRAX-BOTTLE-HEADER.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     margin: 3em; 
     border: solid black 1px;
     box-shadow: 2px 3px 2px black;
-    color:rgb(90, 90, 90);
+    color: black;
+    opacity: .8;
 }
 
 .converter-box{
@@ -28,41 +32,47 @@
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    padding: .3em 0 1.2em 0
+    padding: .7em 0 1.2em 0
 }
 
 button{
-    border:2px solid rgba(255,255,255,.5);
+    border:1px solid black;
 	font-size:1.3em;
 	padding:.25em .5em .3125em;
-	color:rgba(117, 117, 117);
+    color:black;
 	border-radius:.25em;
-	background:transparent;
+	background:white;
     transition:all .100s;
     cursor: pointer;
     margin: 0 .5em;
+    box-shadow: 1px 1px 2px;
 }
 
 button:hover{
-    background-color: rgba(255,255,255,.5);
+    opacity: 1;
 }
 
 input{
-    border:2px solid rgba(255,255,255,.5);
+    border:1px solid black;;
 	font-size:1.3em;
 	padding:.25em .5em .3125em;
-	color:rgba(117, 117, 117);
+	color:black;
 	border-radius:.25em;
-	background:transparent;
-	transition:all .100s;
+    background: white;
+    transition:all .100s;
+    box-shadow: 1px 1px 2px;
+}
+
+::placeholder{
+    color: black;
 }
 input:focus{
 		outline:none;
-		color:rgba(117, 117, 117);
+		color:black;
 		border-color:rgba(255,255,255,.75);
 }
 input:keyup {
-        color:rgba(117, 117, 117);
+        color:black;
 		border-color:white;
 		text-shadow:0 0 .125em white;
         box-shadow:0 0 .25em white,inset 0 0 .25em white;	
@@ -70,12 +80,13 @@ input:keyup {
 .unit-drop-down, .to-unit-drop-down{
     padding:.25em .5em .3125em;
     margin: 0;
-    border:2px solid rgba(255,255,255,.5);
+    border:1px solid black;
+    box-shadow: 1px 1px 2px;
     width: 120px;
     border-radius: 3px;
     overflow: hidden;
-    background-color: transparent;
-    color:rgba(117, 117, 117);
+    background-color: white;
+    color:black;
     font-size:1.3em;
     cursor: pointer;
 }
@@ -86,23 +97,29 @@ input:keyup {
 
 .unit-drop-down:focus{
     outline:none;
-    color:rgba(117, 117, 117);
+    color:black;
     cursor: pointer;
     font-size: 1.3em;
 }
 
 .to-unit-drop-down:focus{
     outline:none;
-    color:rgba(117, 117, 117);
+    color:black;
     
 }
 
 .answerAndUnits{
     display: flex;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
+    color: black;
+    background-color: white;
+    border-radius: .25em;
+    margin: 0 12em;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px black;
    
 }
 .answerAndUnits > div {
@@ -112,8 +129,10 @@ input:keyup {
 
 .to{
     align-self: center;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 @media only screen and (max-width: 800px){
@@ -125,6 +144,21 @@ input:keyup {
     }
     .converter-box > * {
         margin: .2em 0;
+    }
+    .main-container{
+        background-size: 153%;
+        background-position-x: 50%;
+        background-image: url("./assets/labset\ \(1\).jpg")
+    }
+    .answerAndUnits{
+        margin: .2em 2em;
+    }
+    .to{
+        color: black;
+        text-shadow: 0px 0px 
+    }
+    ::placeholder{
+        color: gray
     }
 }
 
