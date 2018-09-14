@@ -17,21 +17,26 @@
             <div class="converter-box">
                 <input class="input-number" type="number" min="0" placeholder="enter weight" id="input-number">
 
-                <select class="unit-drop-down" onchange='removeDuplicate()'>
-                    <option value="grams">grams</option>
-                    <option value="kg">kg</option>
+                <select class="unit-drop-down">
+                    <option class = 'grams' value="grams">grams</option>
+                    <option class = 'kg' value="kg">kg</option>
+                    <option class = "oz" value="oz">oz</option>
+                    <option class = 'ml option1' id="option1" value="mL">mL</option>
+                    <option class = "l" value="L">L</option>
+                    <option class = "pint" value="pint">pints</option>
+                    <option class = "gal" value="gal">gal</option>
                 </select>
 
                 <div class='to'>to</div>
 
                 <select class="to-unit-drop-down">
-                    <option class='option1' id="option1" value="mL">mL</option>
-                    <option value="L">L</option>
-                    <option class='grams' value="grams">grams</option>
-                    <option value="oz">oz</option>
-                    <option class='kilograms' value="kg">kg</option>
-                    <option value="pint">pints</option>
-                    <option value="gal">gal</option>
+                    <option class='to-ml option1' id="option1" value="mL">mL</option>
+                    <option class="to-l" value="L">L</option>
+                    <option class='to-grams' value="grams">grams</option>
+                    <option class="to-oz" value="oz">oz</option>
+                    <option class='to-kg' value="kg">kg</option>
+                    <option class="to-pint" value="pint">pints</option>
+                    <option class="to-gal" value="gal">gal</option>
                 </select>
                 
             </div>
